@@ -3,12 +3,33 @@ var startBtn = document.getElementById ("start-button")
 var CodeQuiz = document.getElementById ("codeQuiz")
 var quizTitle = document.getElementById ("quizTitle")
 var OptionsEl = document.getElementById ("Options")
+var timerCountdown = document.getElementsByClassName ("start-timer")
+var Timer
+var timerCount = 75
+
+function startTimer() {
+    Timer = setInterval(function() {
+        timerCount--;
+        timerCountdown.textContent =timerCount;
+        // if (timerCount >= 0) {
+        //     if (isWin && timerCount > 0) {
+        //         clearInterval(Timer);
+        //         winGame(); 
+        //     }
+        // }
+        // if (timerCount === 0) {
+        //     clearInterval(Timer);
+        //     loseGame();
+        // }
+    }, 1000);
+}
 
 startBtn.addEventListener("click", StartQuiz);
 function StartQuiz() {
     startTheQuiz.style.display="none";
     CodeQuiz.style.display="block";
     getQuestions()
+    startTimer()
 }
 
 var Questions = [
