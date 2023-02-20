@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+    <header><h3>Timed Coding Quiz</h3></header>
+        <!-- <div class="card-timer"> -->
+            <div class="timer-text">
+                <div><h4>Highscores</h4></div>
+                <div>
+                    <div class="timer-count"><span>75</span>seconds remaining</div>
+                </div>
+            </div>
+        <!-- </div> -->
+<!-- Start Section -->
+        <!-- <div id="Start">Start Quiz</div> -->
+<!-- Guide Section -->
+    <div id="startTheQuiz">
+        <h3>Instructions:</h3>
+        <p> You will have 75 seconds to answer all the questions in this quiz. Please try to answer each question as accurately as possible. When the quiz is completed, you will be presented with your high score, as it will be logged and your initals will be required. You can take the quiz as many times as you'd like for a higher score. May the odds be ever in your favor! Good luck!</p>
+        <button id="start-button">Start Quiz</button>
+    </div>
+</div>
+    <div id="codeQuiz" style="display:none;">
+        <h1>Please answer the questions below:</h1>
+        <h1 id="quizTitle"></h1>
+        <div id="Options"></div>
+    </div>
+<div style="display: none;">
+    <button class="go-back-button">Go Back</button>
+    <button class="clear-highscores">Clear Highscores</button>
+</div>
+
+
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
