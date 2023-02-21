@@ -1,58 +1,250 @@
-* 
-{
-    padding: 0;
-    margin:0;
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif:'Courier New', Courier, monospace; */
+*,
+/* *::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+} */
+
+:root {
+    /* --black: black;
+    --white: white;
+    --lightblue: lightsteelblue;
+    --darkblue: darkslateblue; */
 }
 
-body
-{
-    /* display: grid;
-    place-items: center; */
-    height: 300px;
-    background-color:lemonchiffon;
-    /* background: linear-gradient(0deg, rgba(137, 125, 153, 0.788), rgba(237,245,249,1) 63%); */
-}
-
-h3
-{
-    padding-top: 40px;
-    font-size: medium;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-style:italic;
+body {
+    padding: 10;
+    margin: 40;
     display: flex;
+    flex-direction: column;
+}
+
+.view-highscore {
+    background-color:antiquewhite;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.highscore-button {
+    font-size: 15px;
+    height: 50%;
+    line-height: 0.5em;
+}
+
+.highscore-button:hover {
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+
+.the-timer {
+    border: 15px solid black;
+}
+
+.the-starter {
+    background-color:turquoise;
+    border: 15px solid black;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-page {
+    background-color: antiquewhite;
+    border-radius: 0rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-h4
-{
-    margin-right: auto;
-    display: flex;
-
+.startTheQuiz,
+h2,
+p,
+button {
+    padding: 5px;
 }
 
-.card-timer
-{
-    margin-left:auto;
-    padding-bottom: 30px;
+h2 {
+    font-size: 10px;
 }
 
-.timer-text
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
+.introduction {
+    font-size: 15px;
 }
 
-#instructions p
-{
+.lets-start {
+    width: 20%;
+    height: 20px;
+    font-size: 15px;
+    line-height: 0.5em;
+    border-radius: 1rem;
+    background-color:turquoise;
+    margin: 10px;
+}
+
+.lets-start:hover {
+    color: black;
+}
+
+.the-quiz {
+    background-color: turquoise;
+    border: 15px solid black;
+    font-size: 100%;
+    text-align: center;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.start-button 
-{
+#the-questions {
+    background-color: antiquewhite;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+   
+.answer-buttons {
+    display: block;
+    text-align: center;
+}
+
+.button {
+    font-size: 15px;
+    background-color: white;
+    display: flex;
+    width: 180px;
+    height: 45px;
+    color: black;
+    display: block;
+    margin: 50px 0;
+}
+
+.button:hover {
+    background-color:goldenrod;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.the-final {
+    background-color: turquoise;
+    border:15px solid black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theEndText {
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.complete {
+    margin: 20;
+}
+
+#userScore {
+    font-size: 100%;
+}
+
+label {
+    font-size: 100%;
+}
+
+input {
+    font-size: 100%;
+}
+
+.endButton {
+    font-size: 15px;
+    background-color: turquoise;
+    color: black;
+    height: 30%;
+    margin: 30px 0;
+}
+
+.endButton:hover {
+    background-color:goldenrod;
+    color: white;
+    transition: 0.5s;
+}
+
+.the-highscore {
+    background-color: turquoise;
+    height: 100vh;
+    border: 15x solid black;
+    font-size: 120%;
+    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.highscoreCardText {
+    background-color: antiquewhite;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#highscore-button {
+    font-size: 15px;
+    background-color: turquoise;
+    color: black;
+    height: 30px;
+    margin: 30px 0;
+}
+
+#highscore-button:hover {
+    background-color: goldenrod;
+    color: white;
+    transition: 0.5s;
+}
+
+.clearScore {
+    font-size: 15px;
+    background-color: turquoise;
+    color: black;
+    height: 30px;
+    margin: 30px 0;
+}
+
+.clearScore:hover {
+    background-color: goldenrod;
+    color: white;
+    transition: 0.5s;
+}
+
+.restart-button {
+    font-size: 15px;
+    background-color: turquoise;
+    color: black;
+    height: 6%;
+    margin: 30px 0;
+}
+
+.restart-button:hover {
+    background-color: goldenrod;
+    color: white;
+    transition: 0.5s;
 }

@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
     <link rel="stylesheet" href="./Assets/style.css">
+    <title>Timed Coding Quiz</title>
 </head>
+
 <body>
-    <header><h3>Timed Coding Quiz</h3></header>
-        <!-- <div class="card-timer"> -->
-            <div class="timer-text">
-                <div><h4>View Highscores</h4></div>
-                <div>
-                    <div class="timer-count"><span class="start-timer">75</span>seconds remaining</div>
-                </div>
-            </div>
-        <!-- </div> -->
-<!-- Start Section -->
-        <!-- <div id="Start">Start Quiz</div> -->
-<!-- Guide Section -->
-    <div id="startTheQuiz">
-        <h3>Instructions:</h3>
-        <p> You will have 75 seconds to answer all the questions in this quiz. Please try to answer each question as accurately as possible. When the quiz is completed, you will be presented with your high score, as it will be logged and your initals will be required. You can take the quiz as many times as you'd like for a higher score. May the odds be ever in your favor! Good luck!</p>
-        <button id="start-button">Start Quiz</button>
-    </div>
-</div>
-    <div id="codeQuiz" style="display:none;">
-        <h1>Please answer the questions below:</h1>
-        <h1 id="quizTitle"></h1>
-        <div id="Options"></div>
-    </div>
-<div style="display: none;">
-    <button class="go-back-button">Go Back</button>
-    <button class="clear-highscores">Clear Highscores</button>
-</div>
+    <section class="view-highscore">
+        <button class="highscore-button">View Highscore</button>
+        <section>
+            <p id="the-timer">Timer: 75 seconds</p>
+        </section>
+    </section>
+    <section class="the-starter">
+        <section id="start-page">
+            <section id="startTheQuiz">
+                <h3>Timed Coding Quiz:</h3>
+                <h3>Let's Test Your Knowledge!</h3>
+                <p class="introduction">You will have 75 seconds to answer (5) questions in this quiz. Please try to answer each question as accurately as possible. When the quiz is completed, you will be presented with your high score, then prompted to enter your initlas. This will ensure that your score is logged. May the odds be ever in your favor! Good luck!</p>
+                <button class="lets-start">Start</button>
+            </section>
+        </section>
+    </section>
+    <section class="the-quiz">
+        <section id="the-questions">
+            <section id="question">Question</section>
+            <section id="answer-butttons">
+                <button class="button" id="option1">Answer-a</button>
+                <button class="button" id="option2">Answer-b</button>
+                <button class="button" id="option3">Answer-c</button>
+                <button class="button" id="option4">Answer-d</button>
+            </section>
+            <section id="correct-incorrect"></section>
+        </section>
+    </section>
+    <section class="the-final">
+        <section class="theEndText">
+            <h3 class="complete">You're All Done!</h3>
+            <p id="userScore">Your score is:</p>
+            <form class="initialsInput">
+                <label>Enter Initials Here:</label>
+                <input id="user-initials">
+                <button class="endButton">Submit</button>
+            </form>
+            <button class="restart-button">Restart Quiz!</button>
+            <section class="msg-space"></section>
+        </section>
 
-
+    </section>
+    <section class="the-highscore">
+        <section class="highscoreCardText">
+            <h4>Checkout the Highscores!</h4>
+            <ol id="checkTheHighscores"></ol>
+            <button id="highscore-button" class="goBack">Return</button>
+            <button id="highscore-button" class="goBackAgain">Return</button>
+            <button id="highscore-button" class="clearScore">Clear Your Score!</button>
+        </section>
+    </section>
     <script src="./Assets/script.js"></script>
 </body>
+
 </html>
