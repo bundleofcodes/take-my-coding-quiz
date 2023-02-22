@@ -120,7 +120,7 @@ function getNextQuestion(index) {
         clearInterval(timerInterval);
         beginQuiz.style.display = "none";
         endQuiz.style.display = "flex";
-        timerEl.innerHTML = "Sorry, Your time has expired!";
+        timerEl.innerHTML = "Great job!";
         userScore.innerHTML = "Your score is: " + timeLeft;
         return;
     }
