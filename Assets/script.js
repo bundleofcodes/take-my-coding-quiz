@@ -2,33 +2,25 @@ var startHere = document.querySelector(".lets-start");
 var readySetStart = document.querySelector(".the-starter");
 var beginQuiz = document.querySelector(".the-quiz");
 var endQuiz = document.querySelector(".the-final");
-
 var timerInterval;
 var timerEl = document.getElementById("the-timer");
 var questionEL = document.getElementById("question");
-
 var select1 = document.getElementById("option1");
 var select2 = document.getElementById("option2");
 var select3 = document.getElementById("option3");
 var select4 = document.getElementById("option4");
-
 var correctIncorrect = document.getElementById("correct-incorrect");
 var timeLeft = 75;
 var index = 0;
-
 var quizOver = document.querySelector(".endButton");
 var theScore = document.getElementById("userScore");
 var inputForm = document.querySelector(".initialsInput");
-
 var seeYourScore = document.querySelector(".the-highscore");
-
 var goBack = document.querySelector(".goBack");
 var goBackAgain = document.querySelector(".goBackAgain");
-
 var clearScore = document.querySelector(".clearScore");
 var viewScore = document.querySelector(".highscore-button");
 var restartQuiz = document.querySelector(".restart-button");
-
 var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 var checkHighscores = document.getElementById("checkTheHighscores");
 
