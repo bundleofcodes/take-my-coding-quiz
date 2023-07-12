@@ -24,6 +24,7 @@ Screenshots of application:
 - Georgia Tech Coding Bootcamp
 - Mazin Abed
 - Nnamdi Onyeije
+- Alyssa Geria
 - Youtube.com
 - Google.com
 
