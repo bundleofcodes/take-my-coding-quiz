@@ -24,6 +24,8 @@ Screenshots of application:
 - Georgia Tech Coding Bootcamp
 - Mazin Abed
 - Nnamdi Onyeije
+- Youtube.com
+- Google.com
 
 ## License
 [Link to MIT Licence here:](https://github.com/bundleofcodes/take-my-coding-quiz/blob/main/LICENSE)
